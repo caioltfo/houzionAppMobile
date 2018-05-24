@@ -9,12 +9,16 @@ import { HomePage } from '../pages/home/home';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { SobrePage } from '../pages/sobre/sobre';
+import { ContatoPage } from '../pages/contato/contato';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    AmbientesPage
+    AmbientesPage,
+    SobrePage,
+    ContatoPage
   ],
   imports: [
     BrowserModule,
@@ -24,8 +28,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    AmbientesPage
-      ],
+    AmbientesPage,
+    SobrePage,
+    ContatoPage
+    ],
   providers: [
     StatusBar,
     SplashScreen,
