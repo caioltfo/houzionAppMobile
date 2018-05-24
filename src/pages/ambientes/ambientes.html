@@ -5,8 +5,11 @@
   Ionic pages and navigation.
 -->
 <ion-header>
- ahshshashhahdhasbdh
+
   <ion-navbar>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
     <ion-title class = "title"><img class = "icon"src = {{dados_ambiente.title}} ></ion-title>
   </ion-navbar>
 
@@ -22,21 +25,26 @@
 
   </div>
   
-    
-      <ion-card>
-        <img src = {{dados_ambiente.ambiente[0].componente[0].srcImg}}>
-        <div class = "card-title">{{dados_ambiente.ambiente[0].componente[0].titleCard}}</div>
-        <div class="card-subtitle">{{dados_ambiente.ambiente[0].componente[0].subtitleCard}}</div>
-      </ion-card>
-      <ion-card>
-        <img src = {{dados_ambiente.ambiente[0].componente[0].srcImg}}>
-        <div class = "card-title">{{dados_ambiente.ambiente[0].componente[0].titleCard}}</div>
-        <div class="card-subtitle">{{dados_ambiente.ambiente[0].componente[0].subtitleCard}}</div>
-      </ion-card>
-      <ion-card>
-        <img src = {{dados_ambiente.ambiente[0].componente[0].srcImg}}>
-        <div class = "card-title">{{dados_ambiente.ambiente[0].componente[0].titleCard}}</div>
-        <div class="card-subtitle">{{dados_ambiente.ambiente[0].componente[0].subtitleCard}}</div>
-      </ion-card>
+     <div class="monitoring"></div>
+     <div class= "main_component">
+       <div class = "component">
+        <img class = "img_component" src = {{dados_ambiente.ambiente[0].componentes[0].srcImg}}/> 
+        <p class = "name_component">{{dados_ambiente.ambiente[0].componentes[0].titleCard}}</p>
+        <p class = "status">{{dados_ambiente.ambiente[0].componentes[0].status}}</p>
+        <a class = "detalhes_link" href = "">Mais detalhes</a>
+      </div>
+      <div class = "component">
+          <img class = "img_component" src = {{dados_ambiente.ambiente[0].componentes[0].srcImg}}/> 
+          <p class = "name_component">{{dados_ambiente.ambiente[0].componentes[0].titleCard}}</p>
+          <p class = "status">{{dados_ambiente.ambiente[0].componentes[0].status}}</p>
+          <a class = "detalhes_link" href = "">Mais detalhes</a>
+        </div>
+        <div class = "component">
+            <img class = "img_component" src = {{dados_ambiente.ambiente[0].componentes[0].srcImg}}/> 
+            <p class = "name_component">{{dados_ambiente.ambiente[0].componentes[0].titleCard}}</p>
+            <p class = "status">{{dados_ambiente.ambiente[0].componentes[0].status}}</p>
+            <a class = "detalhes_link" href = "">Mais detalhes</a>
+          </div>
+     </div>
     
   </ion-content>

@@ -25688,39 +25688,58 @@ page-ambientes ion-title.title {
   align-content: center;
 }
 
-page-ambientes div.ambiente_name {
-  height: 40px;
+page-ambientes div.monitoring {
   width: 100%;
-  border-bottom-color: gray;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
+  height: 30%;
+  background-color: rgba(27, 26, 26, 0);
+  float: top;
 }
 
-page-ambientes p.ambiente_name {
-  padding-left: 45%;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18px;
+page-ambientes div.main_component {
+  width: 100%;
+  height: 70%;
 }
 
-page-ambientes .card-background-page ion-card {
+page-ambientes div.componente {
   position: relative;
-  text-align: center;
-  width: 100%;
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  float: left;
 }
 
-page-ambientes .card-background-page .card-title {
-  position: absolute;
-  top: 36%;
-  font-size: 2.0em;
-  width: 100%;
-  font-weight: bold;
-  color: #fff;
+page-home img.icon {
+  width: 50px;
 }
 
-page-ambientes .card-background-page .card-subtitle {
-  font-size: 1.0em;
-  position: absolute;
-  top: 52%;
+page-home ion-title.title {
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+page-home div.monitoring {
   width: 100%;
-  color: #06d117;
+  height: 30%;
+  background: #1b1a1a;
+  float: top;
+}
+
+page-home div.main_component {
+  width: 100%;
+  height: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-items: center;
+}
+
+page-home div.component {
+  position: relative;
+  width: 100%;
+  background-color: blue;
+  float: left;
 }
